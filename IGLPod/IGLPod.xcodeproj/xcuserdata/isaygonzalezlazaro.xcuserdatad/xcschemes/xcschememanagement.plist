@@ -6,8 +6,23 @@
 	<dict>
 		<key>IGLPod.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<true/>
 			<key>orderHint</key>
 			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>6AAD28EF208DEEBD00105B9D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6AAD28F8208DEEBD00105B9D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

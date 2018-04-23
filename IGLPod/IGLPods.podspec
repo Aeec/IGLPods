@@ -6,6 +6,7 @@ s.ios.deployment_target = '8.0'
 s.name = "IGLPods"
 s.summary = "project to Test pod"
 s.requires_arc = true
+s.swift_version = '4.1'
 
 # 2
 s.version = "0.1.0"
@@ -39,8 +40,8 @@ s.framework = "UIKit"
 
 
 # 8
-s.source_files = "IGLPod/**/*.{swift}"
+s.source_files = "IGLPod/IGLPod/**/*.{swift}"
 
 # 9
-s.resources = "IGLPod/**/*.{png,jpeg,jpg,storyboard,xib}"
+#s.resources = "IGLPod/IGLPod/**/*.{png,jpeg,jpg,storyboard,xib}"
 end
