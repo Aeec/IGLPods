@@ -39,8 +39,8 @@ s.framework = "UIKit"
 
 
 # 8
-s.source_files = "RWPickFlavor/**/*.{swift}"
+s.source_files = "IGLPod/**/*.{swift}"
 
 # 9
-s.resources = "RWPickFlavor/**/*.{png,jpeg,jpg,storyboard,xib}"
+s.resources = "IGLPod/**/*.{png,jpeg,jpg,storyboard,xib}"
 end
