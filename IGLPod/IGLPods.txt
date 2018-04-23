@@ -21,7 +21,7 @@ s.author = { "Isay Gonzalez" => "isy.gonzi@gmai.com" }
 
 
 # 5 - Replace this URL with your own Github page's URL (from the address bar)
-s.homepage = "[Your RWPickFlavor Homepage URL Goes Here]"
+s.homepage = "https://github.com/Aeec/"
 
 # For example,
 # s.homepage = "https://github.com/Aeec/"
@@ -42,5 +42,5 @@ s.framework = "UIKit"
 s.source_files = "IGLPod/**/*.{swift}"
 
 # 9
-s.resources = "IGLPod/**/*.{png,jpeg,jpg,storyboard,xib}"
+ s.resources = "IGLPod/**/*.{png,jpeg,jpg,storyboard,xib}"
 end

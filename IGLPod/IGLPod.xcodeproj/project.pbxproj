@@ -11,6 +11,7 @@
 		6AAD28FA208DEEBD00105B9D /* IGLPod.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AAD28F0208DEEBD00105B9D /* IGLPod.framework */; };
 		6AAD28FF208DEEBD00105B9D /* IGLPodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAD28FE208DEEBD00105B9D /* IGLPodTests.swift */; };
 		6AAD2901208DEEBD00105B9D /* IGLPod.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AAD28F3208DEEBD00105B9D /* IGLPod.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6AAD290B208DFCD500105B9D /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAD290A208DFCD500105B9D /* test.swift */; };
 		B880FC306E0E5BEC7886ADA1 /* Pods_IGLPodTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC06B62C040DE259B797F4F0 /* Pods_IGLPodTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		6AAD28F9208DEEBD00105B9D /* IGLPodTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IGLPodTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AAD28FE208DEEBD00105B9D /* IGLPodTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGLPodTests.swift; sourceTree = "<group>"; };
 		6AAD2900208DEEBD00105B9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AAD290A208DFCD500105B9D /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		7C67C6218486D7B707845B02 /* Pods-IGLPod.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGLPod.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IGLPod/Pods-IGLPod.debug.xcconfig"; sourceTree = "<group>"; };
 		8E24AE0717B3CB01CBCE66B4 /* Pods-IGLPodTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGLPodTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IGLPodTests/Pods-IGLPodTests.release.xcconfig"; sourceTree = "<group>"; };
 		B47F821E3ABCE275337AEF58 /* Pods-IGLPodTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGLPodTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IGLPodTests/Pods-IGLPodTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 			children = (
 				6AAD28F3208DEEBD00105B9D /* IGLPod.h */,
 				6AAD28F4208DEEBD00105B9D /* Info.plist */,
+				6AAD290A208DFCD500105B9D /* test.swift */,
 			);
 			path = IGLPod;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 				TargetAttributes = {
 					6AAD28EF208DEEBD00105B9D = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 					6AAD28F8208DEEBD00105B9D = {
 						CreatedOnToolsVersion = 9.3;
@@ -267,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AAD290B208DFCD500105B9D /* test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +418,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7C67C6218486D7B707845B02 /* Pods-IGLPod.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -421,10 +427,15 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = IGLPod/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = none.IGLPod;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -434,6 +445,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E84546610FD390312D676AA4 /* Pods-IGLPod.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -442,7 +454,11 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = IGLPod/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = none.IGLPod;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -455,9 +471,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B47F821E3ABCE275337AEF58 /* Pods-IGLPodTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = IGLPodTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = none.IGLPodTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -469,9 +490,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8E24AE0717B3CB01CBCE66B4 /* Pods-IGLPodTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = IGLPodTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = none.IGLPodTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
