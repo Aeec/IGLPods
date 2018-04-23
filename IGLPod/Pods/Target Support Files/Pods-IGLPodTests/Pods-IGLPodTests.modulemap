@@ -1,0 +1,6 @@
+framework module Pods_IGLPodTests {
+  umbrella header "Pods-IGLPodTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
