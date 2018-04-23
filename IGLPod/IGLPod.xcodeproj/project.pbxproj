@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		4EE00B2C3EF1CE47DDA13A1A /* Pods_IGLPod.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C913F15B596603E477C8834 /* Pods_IGLPod.framework */; };
 		6AAD28FA208DEEBD00105B9D /* IGLPod.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AAD28F0208DEEBD00105B9D /* IGLPod.framework */; };
-		6AAD28FF208DEEBD00105B9D /* IGLPodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAD28FE208DEEBD00105B9D /* IGLPodTests.swift */; };
 		6AAD2901208DEEBD00105B9D /* IGLPod.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AAD28F3208DEEBD00105B9D /* IGLPod.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6AAD290B208DFCD500105B9D /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAD290A208DFCD500105B9D /* test.swift */; };
 		B880FC306E0E5BEC7886ADA1 /* Pods_IGLPodTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC06B62C040DE259B797F4F0 /* Pods_IGLPodTests.framework */; };
@@ -31,8 +30,6 @@
 		6AAD28F3208DEEBD00105B9D /* IGLPod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IGLPod.h; sourceTree = "<group>"; };
 		6AAD28F4208DEEBD00105B9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6AAD28F9208DEEBD00105B9D /* IGLPodTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IGLPodTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6AAD28FE208DEEBD00105B9D /* IGLPodTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGLPodTests.swift; sourceTree = "<group>"; };
-		6AAD2900208DEEBD00105B9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6AAD290A208DFCD500105B9D /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		7C67C6218486D7B707845B02 /* Pods-IGLPod.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGLPod.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IGLPod/Pods-IGLPod.debug.xcconfig"; sourceTree = "<group>"; };
 		8E24AE0717B3CB01CBCE66B4 /* Pods-IGLPodTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGLPodTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IGLPodTests/Pods-IGLPodTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -77,7 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				6AAD28F2208DEEBD00105B9D /* IGLPod */,
-				6AAD28FD208DEEBD00105B9D /* IGLPodTests */,
 				6AAD28F1208DEEBD00105B9D /* Products */,
 				48C5A289AC1C263B0346AEB8 /* Pods */,
 				CFAD0B68A77ADD4EFFBC04B2 /* Frameworks */,
@@ -101,15 +97,6 @@
 				6AAD290A208DFCD500105B9D /* test.swift */,
 			);
 			path = IGLPod;
-			sourceTree = "<group>";
-		};
-		6AAD28FD208DEEBD00105B9D /* IGLPodTests */ = {
-			isa = PBXGroup;
-			children = (
-				6AAD28FE208DEEBD00105B9D /* IGLPodTests.swift */,
-				6AAD2900208DEEBD00105B9D /* Info.plist */,
-			);
-			path = IGLPodTests;
 			sourceTree = "<group>";
 		};
 		CFAD0B68A77ADD4EFFBC04B2 /* Frameworks */ = {
@@ -279,7 +266,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6AAD28FF208DEEBD00105B9D /* IGLPodTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

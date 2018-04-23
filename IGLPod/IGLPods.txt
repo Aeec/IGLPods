@@ -42,5 +42,5 @@ s.framework = "UIKit"
 s.source_files = "IGLPod/**/*.{swift}"
 
 # 9
- s.resources = "IGLPod/**/*.{png,jpeg,jpg,storyboard,xib}"
+#s.resources = "IGLPod/**/*.{png,jpeg,jpg,storyboard,xib}"
 end
