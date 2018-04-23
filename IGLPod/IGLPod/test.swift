@@ -6,9 +6,16 @@
 //  Copyright © 2018 Isay González Lázaro. All rights reserved.
 //
 
-import Foundation
 
-func test()
+import Foundation
+import UIKit
+open class IGtest: NSObject
 {
-    print("HELLO POD!")
+    public func myTest(lab: UILabel)
+    {
+        lab.text = "HELLO WORLD"
+        
+        
+    }
 }
+
